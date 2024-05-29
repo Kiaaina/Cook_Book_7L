@@ -8,7 +8,7 @@ title "Cook Book"
 @set "apk=145712896014"
 @set "app=951712865014"
 @set "exe=981763543109"
-cecho {04}1=apk{\n}2=app{\n}3=exe{07}
+cecho {04}1=apk{\n}2=app{\n}3=exe{07}{\n}
 
 set /p m=Choose;
 if (%m%==1) & goto one
@@ -17,15 +17,15 @@ if (%m%==3) & goto three
 goto top
 
 :one
-copy "%apk% ./Cook_Book.apk"
+copy "%apk%" "./Cook_Book.apk"
 goto 7L
 
 :two
-copy "%app% ./Cook_Book.app"
+copy "%app%" "./Cook_Book.app"
 goto 7L
 
 :three
-copy "%exe% ./Cook_Book.exe"
+copy "%exe%" "./Cook_Book.exe"
 goto 7L
 
 :7L
