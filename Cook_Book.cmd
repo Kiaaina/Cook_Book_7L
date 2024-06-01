@@ -11,9 +11,9 @@ title "Cook Book"
 cecho {04}1=apk{\n}2=app{\n}3=exe{07}{\n}
 
 set /p m=Choose;
-if (%m%==1) & goto one
-if (%m%==2) & goto two
-if (%m%==3) & goto three
+if %m%==1 & goto one
+if %m%==2 & goto two
+if %m%==3 & goto three
 goto top
 
 :one
